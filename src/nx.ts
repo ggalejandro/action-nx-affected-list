@@ -40,7 +40,7 @@ export function getNxAffected({
   const commands = [
     `./node_modules/.bin/nx affected:${type} --plain ${args}`,
     `nx affected:${type} --plain ${args}`,
-    `npx nx affected:${type} --plain ${args}`
+    `npx --yes nx affected:${type} --plain ${args}`
   ]
   const result = executeNxCommands({commands, workspace})
 
