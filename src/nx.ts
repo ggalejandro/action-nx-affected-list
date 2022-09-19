@@ -16,7 +16,6 @@ const executeNxCommands = ({
       cmdSuccessful = true
       break
     } catch (err) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       core.debug(`Command failed: ${JSON.stringify(err)}`)
     }
   }
